@@ -1,6 +1,6 @@
 {
   "name": "rr-api",
-  "description": "Api Server for Rose Rocket Dispatch App, to see it go to http://localhost:3030/rrAPI",
+  "description": "rose rocket API server",
   "version": "0.0.0",
   "homepage": "",
   "private": true,
@@ -47,6 +47,8 @@
     "cors": "^2.8.5",
     "feathers-mongoose": "^8.3.1",
     "helmet": "^3.23.3",
+    "mongodb-core": "^3.2.7",
+    "mongoose": "^5.9.22",
     "serve-favicon": "^2.5.0",
     "winston": "^3.0.0"
   },

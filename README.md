@@ -1,6 +1,6 @@
 # rr-api
 
-> Api Server for Rose Rocket Dispatch App, to see it go to http://localhost:3030/rrAPI
+> rose rocket API server
 
 ## About
 
