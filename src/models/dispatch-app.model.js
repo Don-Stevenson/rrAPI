@@ -30,15 +30,30 @@ module.exports = function (app) {
             true,
             'Task Type required. Choose: PickUp, DropOff, Other',
           ],
-          validate: {
-            validator: (v) => {
-              if (v === 'PickUp' || 'DropOff' || 'Other') {
-                return true;
-              }
-            },
-            message: '{VALUE} is not a validate task!',
-          },
+          // validate: {
+          //   validator: (v) => {
+          //     if (v === 'PickUp' || 'DropOff' || 'Other') {
+          //       return true;
+          //     }
+          //   },
+          //   message: '{VALUE} is not a validate task!',
+          // },
         },
+        taskStartTime: {
+          type: String,
+          required: [
+            true,
+            'Task Start time is required',
+          ],
+        },
+        taskEndTime: {
+          type: String,
+          required: [
+            true,
+            'Task End time is required',
+          ],
+        }
+
       },
     },
 
