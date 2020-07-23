@@ -1,6 +1,6 @@
 {
   "name": "rr-api",
-  "description": "Api Server for Rose Rocket Dispatch App",
+  "description": "Api Server for Rose Rocket Dispatch App, to see it go to http://localhost:3030/rrAPI",
   "version": "0.0.0",
   "homepage": "",
   "private": true,
