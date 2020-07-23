@@ -1,5 +1,5 @@
 // Dispatch App-model.js - A mongoose model
-// 
+//
 // See http://mongoosejs.com/docs/models.html
 // for more of what you can do here.
 
@@ -7,30 +7,45 @@ module.exports = function (app) {
   const modelName = 'contacts';
   const mongooseClient = app.get('mongooseClient');
   const { Schema } = mongooseClient;
-  const schema = new Schema({
-    name : {
-      first: {
-        type: String,
-        required: [true, 'First Name is required']
-      },
-      last: {
-        type: String,
-        required: false
-      }
-    },
-    phone : {
-      type: String,
-      required: [true, 'Phone is required'],
-      validate: {
-        validator: function(v) {
-          return /^\+(?:[0-9] ?){6,14}[0-9]$/.test(v);
+  const schema = new Schema(
+    {
+      name: {
+        first: {
+          type: String,
+          required: [true, 'First Name is required'],
         },
-        message: '{VALUE} is not a valid international phone number!'
-      }
+        last: {
+          type: String,
+          required: false,
+        },
+      },
+      task: {
+        taskName: {
+          type: String,
+          required: [false],
+        },
+        taskType: {
+          type: String,
+          required: [
+            true,
+            'Task Type required. Choose: PickUp, DropOff, Other',
+          ],
+          validate: {
+            validator: (v) => {
+              if (v === 'PickUp' || 'DropOff' || 'Other') {
+                return true;
+              }
+            },
+            message: '{VALUE} is not a validate task!',
+          },
+        },
+      },
+    },
+
+    {
+      timestamps: true,
     }
-  }, {
-    timestamps: true
-  });
+  );
 
   // This is necessary to avoid model compilation errors in watch mode
   // see https://mongoosejs.com/docs/api/connection.html#connection_Connection-deleteModel
