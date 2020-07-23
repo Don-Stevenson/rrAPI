@@ -20,8 +20,8 @@
       "unix"
     ],
     "quotes": [
-      "error",
-      "single"
+      "ignore",
+      "double"
     ],
     "semi": [
       "error",

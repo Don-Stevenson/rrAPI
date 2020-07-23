@@ -1,18 +1,17 @@
-// Dispatch App-model.js - A mongoose model
+// rrAPI-model.js - A mongoose model
 //
 // See http://mongoosejs.com/docs/models.html
 // for more of what you can do here.
-
 module.exports = function (app) {
-  const modelName = 'rrAPI';
-  const mongooseClient = app.get('mongooseClient');
+  const modelName = "rrApi";
+  const mongooseClient = app.get("mongooseClient");
   const { Schema } = mongooseClient;
   const schema = new Schema(
     {
       name: {
         first: {
           type: String,
-          required: [true, 'First Name is required'],
+          required: [true, "First Name is required"],
         },
         last: {
           type: String,
@@ -28,7 +27,7 @@ module.exports = function (app) {
           type: String,
           required: [
             true,
-            'Task Type required. Choose: PickUp, DropOff, Other',
+            "Task Type required. Choose: PickUp, DropOff, Other",
           ],
           // validate: {
           //   validator: (v) => {
@@ -41,22 +40,14 @@ module.exports = function (app) {
         },
         taskStartTime: {
           type: String,
-          required: [
-            true,
-            'Task Start time is required',
-          ],
+          required: [true, "Task Start time is required"],
         },
         taskEndTime: {
           type: String,
-          required: [
-            true,
-            'Task End time is required',
-          ],
-        }
-
+          required: [true, "Task End time is required"],
+        },
       },
     },
-
     {
       timestamps: true,
     }

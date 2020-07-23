@@ -1,5 +1,5 @@
-const dispatchApp = require('./dispatch-app/dispatch-app.service.js');
+const rrApi = require('./rr-api/rr-api.service.js');
 // eslint-disable-next-line no-unused-vars
 module.exports = function (app) {
-  app.configure(dispatchApp);
+  app.configure(rrApi);
 };
