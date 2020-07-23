@@ -26,9 +26,9 @@ module.exports = function (app) {
         type: String,
         required: false
       },
-      TaskStopTime: {
+      taskStopTime: {
         type: String,
-        required: [true, 'First Name is required']
+        required: false
       }
     }
     
