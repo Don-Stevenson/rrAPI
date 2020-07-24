@@ -17,16 +17,20 @@ module.exports = function (app) {
         required: false
       }
     },
-    task: {
-      taskType: {
+    taskInfo: {
+      type: {
         type: String,
         required: [true, 'Task type is required: drop off, pick up or other']
       },
-      taskStartTime: {
+      date: {
         type: String,
         required: false
       },
-      taskStopTime: {
+      startTime: {
+        type: String,
+        required: false
+      },
+      stopTime: {
         type: String,
         required: false
       }
