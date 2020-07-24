@@ -29,15 +29,15 @@ module.exports = function (app) {
       },
       date: {
         type: String,
-        required: false
+        required: [true, 'A date is required']
       },
       startTime: {
         type: String,
-        required: false
+        required: [true, 'Start time is required. Please use 24 hour clock format']
       },
       stopTime: {
         type: String,
-        required: false
+        required: [true, 'Stop time is required. Please use 24 hour clock format']
       }
     }
     
