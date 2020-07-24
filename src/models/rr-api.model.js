@@ -1,5 +1,5 @@
 // rrAPI-model.js - A mongoose model
-// 
+//
 // See http://mongoosejs.com/docs/models.html
 // for more of what you can do here.
 
@@ -7,43 +7,49 @@
 // http://localhost:3030/rr-api
 //*****************************/
 module.exports = function (app) {
-  const modelName = 'rrApi';
-  const mongooseClient = app.get('mongooseClient');
+  const modelName = "rrApi";
+  const mongooseClient = app.get("mongooseClient");
   const { Schema } = mongooseClient;
-  const schema = new Schema({
-    
-    taskInfo: {
-      driverName : {
+  const schema = new Schema(
+    {
+      driverName: {
         first: {
           type: String,
-          required: [true, 'First Name is required']
+          required: [true, "First Name is required"],
         },
         last: {
           type: String,
-          required: false
-        }
+          required: false,
+        },
       },
       type: {
         type: String,
-        required: [true, 'Task type is required: drop off, pick up or other']
+        required: [true, "Task type is required: drop off, pick up or other"],
       },
       date: {
         type: String,
-        required: [true, 'A date is required']
+        required: [true, "A date is required"],
       },
       startTime: {
         type: String,
-        required: [true, 'Start time is required. Please use 24 hour clock format']
+        required: [
+          true,
+          "Start time is required. Please use 24 hour clock format",
+        ],
       },
       stopTime: {
         type: String,
-        required: [true, 'Stop time is required. Please use 24 hour clock format']
-      }
+        required: [
+          true,
+          "Stop time is required. Please use 24 hour clock format",
+        ],
+      },
+    },
+
+    {
+      timestamps: true,
     }
-    
-  }, {
-    timestamps: true
-  });
+  );
 
   // This is necessary to avoid model compilation errors in watch mode
   // see https://mongoosejs.com/docs/api/connection.html#connection_Connection-deleteModel
@@ -51,5 +57,4 @@ module.exports = function (app) {
     mongooseClient.deleteModel(modelName);
   }
   return mongooseClient.model(modelName, schema);
-  
 };
