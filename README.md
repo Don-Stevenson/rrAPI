@@ -10,6 +10,10 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 sudo service mongod start
 sudo service mongod status
 
+
+### Route is 
+http://localhost:3030/rr-api
+
 ## Getting Started
 
 Getting up and running is as easy as 1, 2, 3.
