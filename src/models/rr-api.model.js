@@ -2,6 +2,10 @@
 // 
 // See http://mongoosejs.com/docs/models.html
 // for more of what you can do here.
+
+// Route is
+// http://localhost:3030/rr-api
+//*****************************/
 module.exports = function (app) {
   const modelName = 'rrApi';
   const mongooseClient = app.get('mongooseClient');
