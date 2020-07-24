@@ -11,17 +11,18 @@ module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
   const { Schema } = mongooseClient;
   const schema = new Schema({
-    name : {
-      first: {
-        type: String,
-        required: [true, 'First Name is required']
-      },
-      last: {
-        type: String,
-        required: false
-      }
-    },
+    
     taskInfo: {
+      driverName : {
+        first: {
+          type: String,
+          required: [true, 'First Name is required']
+        },
+        last: {
+          type: String,
+          required: false
+        }
+      },
       type: {
         type: String,
         required: [true, 'Task type is required: drop off, pick up or other']
