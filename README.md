@@ -18,7 +18,7 @@ http://localhost:3030/rr-api
 
 Getting up and running is as easy as 1, 2, 3.
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
+1. Make sure you have [NodeJS](https://nodejs.org/) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
 2. Install your dependencies
 
     ```
@@ -29,7 +29,7 @@ Getting up and running is as easy as 1, 2, 3.
 3. Start your app
 
     ```
-    npm start
+    yarn start
     ```
 
 ## Testing
