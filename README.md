@@ -11,7 +11,7 @@ sudo service mongod start
 sudo service mongod status
 
 
-### Route is 
+### Home Route is 
 http://localhost:3030/rr-api
 
 ## Getting Started

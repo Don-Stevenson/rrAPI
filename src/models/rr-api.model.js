@@ -12,6 +12,10 @@ module.exports = function (app) {
   const { Schema } = mongooseClient;
   const schema = new Schema(
     {
+      taskId: {
+        type: String,
+        required: [true, "Task id is required"],
+      },
       driverName: {
         first: {
           type: String,
@@ -19,10 +23,14 @@ module.exports = function (app) {
         },
         last: {
           type: String,
-          required: false,
+          required: [true, "Last Name is required"],
         },
       },
-      type: {
+      location: {
+        type: String,
+        required: [true, "Task location is required"],
+      },
+      taskType: {
         type: String,
         required: [true, "Task type is required: drop off, pick up or other"],
       },
