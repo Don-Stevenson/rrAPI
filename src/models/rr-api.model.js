@@ -13,7 +13,7 @@ module.exports = function (app) {
   const schema = new Schema(
     {
       taskId: {
-        type: String,
+        type: Number,
         required: [true, "Task id is required"],
       },
       driverName: {
