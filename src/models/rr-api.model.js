@@ -35,7 +35,7 @@ module.exports = function (app) {
         required: [true, "Task type is required: drop off, pick up or other"],
       },
       date: {
-        type: Date,
+        type: String,
         required: [true, "A date is required"],
       },
       startTime: {
