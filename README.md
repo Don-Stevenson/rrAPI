@@ -64,9 +64,8 @@ Getting up and running in 5 easy steps
 2. - Ensure Mongodb is running
 
    ```
-     sudo service mongod start
-     sudo service mongod status
-
+   sudo service mongod start
+   sudo service mongod status
    ```
 
 3. Make sure you have [NodeJS](https://nodejs.org/) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
