@@ -16,17 +16,25 @@ http://localhost:3030/rr-api
 
 ## Getting Started
 
-Getting up and running is as easy as 1, 2, 3.
+Getting up and running is as easy as 1, 2, 3, 4
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
-2. Install your dependencies
+1. make sure you have mongodb installed - link here
+
+1.a) Ensure Mongodb is running
+     $ sudo service mongod start
+     $ sudo service mongod status
+
+2. Make sure you have [NodeJS](https://nodejs.org/) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
+
+
+3. Install your dependencies
 
     ```
     cd path/to/rr-api
     npm install
     ```
 
-3. Start your app
+4. Start your app
 
     ```
     yarn start
