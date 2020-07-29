@@ -59,9 +59,9 @@ http://localhost:3030/rr-api
 
 Getting up and running in 5 easy steps
 
-1. make sure you have mongodb installed - link here
+1. Make sure you have [Mongodb](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials) installed 
 
-2. - Ensure Mongodb is running
+2. Ensure Mongodb is running
 
    ```
    sudo service mongod start
