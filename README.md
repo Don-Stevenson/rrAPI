@@ -61,20 +61,24 @@ Getting up and running in 4(ish) easy steps
 
 1. make sure you have mongodb installed - link here
 
-1. (a) - Ensure Mongodb is running
-   $ sudo service mongod start
-     $ sudo service mongod status
+2. (a) - Ensure Mongodb is running
 
-2. Make sure you have [NodeJS](https://nodejs.org/) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
+   ```
+     sudo service mongod start
+     sudo service mongod status
 
-3. Install your dependencies
+   ```
+
+3. Make sure you have [NodeJS](https://nodejs.org/) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
+
+4. Install your dependencies
 
    ```
    cd path/to/rr-api
    npm install
    ```
 
-4. Start your app
+5. Start your app
 
    ```
    yarn start
