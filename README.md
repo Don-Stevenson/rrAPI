@@ -13,29 +13,47 @@
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
 
 ### Ensure Mongodb is running
+
 sudo service mongod start
 sudo service mongod status
 
+### Home Route is
 
-### Home Route is 
 http://localhost:3030/rr-api
 
+### JSON Response to the front end should look like
 
-### JSON to the front end should look like
+```json
+[
+  {
+    "createdAt": "2020-07-29T02:24:48.174Z",
+    "date": "28-07-2020",
+    "driverName": { "first": "Example1", "last": "Lastname1" },
+    "location": "123 Hogtown Toronto On",
+    "startTime": "19:20",
+    "stopTime": "23:50",
+    "taskId": 1234,
+    "taskType": "Other (Lunch)",
+    "updatedAt": "2020-07-29T02:34:34.782Z",
+    "__v": 0,
+    "_id": "5f20ddf06cbe4e1c039f646f"
+  },
 
-createdAt: "2020-07-29T02:24:48.174Z"
-date: "28-07-2020"
-driverName: {first: "Example", last: "Lastname"}
-location: "123 Hogtown Toronto On"
-startTime: "19:20"
-stopTime: "23:50"
-taskId: 1234
-taskType: "Other (Lunch)"
-updatedAt: "2020-07-29T02:34:34.782Z"
-__v: 0
-_id: "5f20ddf06cbe4e1c039f646f"
-
-
+  {
+    "createdAt": "2020-07-29T02:25:48.174Z",
+    "date": "28-07-2020",
+    "driverName": { "first": "Example2", "last": "Lastname2" },
+    "location": "123 Hogtown Toronto On",
+    "startTime": "12:20",
+    "stopTime": "14:150",
+    "taskId": 1234,
+    "taskType": "Drop Off",
+    "updatedAt": "2020-07-29T02:34:35.782Z",
+    "__v": 0,
+    "_id": "5f20ddf06cbe4e1c039f646h"
+  }
+]
+```
 
 ## Getting Started
 
@@ -43,25 +61,24 @@ Getting up and running in 4(ish) easy steps
 
 1. make sure you have mongodb installed - link here
 
-1. a) Ensure Mongodb is running
-     $ sudo service mongod start
+1. (a) - Ensure Mongodb is running
+   $ sudo service mongod start
      $ sudo service mongod status
 
 2. Make sure you have [NodeJS](https://nodejs.org/) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
 
-
 3. Install your dependencies
 
-    ```
-    cd path/to/rr-api
-    npm install
-    ```
+   ```
+   cd path/to/rr-api
+   npm install
+   ```
 
 4. Start your app
 
-    ```
-    yarn start
-    ```
+   ```
+   yarn start
+   ```
 
 ## Testing
 
