@@ -45,7 +45,7 @@ http://localhost:3030/rr-api
     "driverName": { "first": "Example2", "last": "Lastname2" },
     "location": "123 Anystreet St. Toronto, On",
     "startTime": "12:20",
-    "stopTime": "14:150",
+    "stopTime": "14:35",
     "taskId": 1234,
     "taskType": "Drop Off",
     "updatedAt": "2020-07-29T02:34:35.782Z",
