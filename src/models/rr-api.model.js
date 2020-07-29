@@ -16,15 +16,13 @@ module.exports = function (app) {
         type: Number,
         required: [true, "Task id is required"],
       },
-      driverName: {
-        first: {
-          type: String,
-          required: [true, "First Name is required"],
-        },
-        last: {
-          type: String,
-          required: [true, "Last Name is required"],
-        },
+      driverFirstName: {
+        type: String,
+        required: [true, "First Name is required"],
+      },
+      driverLastName: {
+        type: String,
+        required: [true, "Last Name is required"],
       },
       location: {
         type: String,
