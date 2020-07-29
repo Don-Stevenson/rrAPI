@@ -2,6 +2,12 @@
 
 > rose rocket API server
 
+## Issues I would have liked to have solved
+
+- find a way to create more (if not exact) symmetry with the requirements to the React Calendar API
+- Handle dates as a Date type that is sent to the front end
+- Do better verification checks / return the error messages to the front end for better UI
+
 ## About
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
@@ -16,8 +22,8 @@ http://localhost:3030/rr-api
 
 ## Getting Started
 
-Getting up and running is as easy as 1, 2, 3, 4
-
+Getting up and running in 4(ish) easy steps
+ 
 1. make sure you have mongodb installed - link here
 
 1.a) Ensure Mongodb is running
