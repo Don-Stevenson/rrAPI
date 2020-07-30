@@ -1,21 +1,26 @@
 # rr-api
 
-> rose rocket API server
+> Rose Rocket Challenge API Server  
+
+## Things I am proud of
+- First time ever using MongoDB  with Feathers. Getting the db to work with the front was an accomplishment!
+- Being able to send data back and forth to the front end.
+- Gettin data to persist
+- the structure of the data base meets the needs of the information that I needed to work with
+- sending errors from the backend on the front for display
 
 ## Issues I would have liked to have solved
 
-- find a way to create more (if not exact) symmetry with the requirements to the React Calendar API
+- Find a way to create even more (if not exact) symmetry with the requirements to the React Calendar API
 - Handle dates as a Date type that is sent to the front end
-- Do better verification checks / return the error messages to the front end for better UI
+- Do better verification checks / return the more detailed error messages to the front end for better UI
+- In general, I would have like to do the data manipulation and  handling on the back end and send the 
+  properly formatted and processed data back to the front end for display / retrivial / sending to the db
 
 ## About
 
-This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+This project uses [Mongodb](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials) and [Feathers](http://feathersjs.com).
 
-### Ensure Mongodb is running
-
-sudo service mongod start
-sudo service mongod status
 
 ### Home Route is
 
