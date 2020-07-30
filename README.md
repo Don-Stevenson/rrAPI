@@ -1,6 +1,5 @@
 # rr-api
-
-> Rose Rocket Challenge API Server  
+Rose Rocket Code Challenge API Server  
 
 ## Things I am proud of
 
